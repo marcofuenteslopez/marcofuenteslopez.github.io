@@ -1,0 +1,68 @@
+/* Main css */
+
+/* Indice */
+
+/* ETIQUETAS */
+/*
+  - body
+**/
+
+/* CLASES */
+/*
+  - content
+  - footer
+  - layout
+  - navbar
+  - sidebar
+**/
+
+/***** ETIQUETAS *****/
+/* - body */
+body {
+  margin: 0px;
+}
+/* fin body */
+
+/***** CLASES *****/
+/* - content */
+.content {
+  flex: 14;
+}
+/* fin content */
+
+/* - footer */
+.footer {
+  display: flex;
+  background-color: lightblue;
+}
+/* fin footer */
+
+/* - layout */
+.layout {
+  display: flex;
+  background-color: lightgrey;
+}
+
+
+@media (max-width: 600px) {
+  .layout {
+    flex-direction: column;
+  }
+}
+/* fin container */
+
+/* - navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: lightgreen;
+}
+/* fin navbar */
+
+/* - sidebar */
+.sidebar {
+  flex: 1;
+  background: lightpink;
+}
+/* fin sidebar */
