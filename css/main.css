@@ -13,20 +13,21 @@
   - footer
   - layout
   - navbar
-  - sidebar
+  - projects
 **/
 
 /***** ETIQUETAS *****/
 /* - body */
 body {
   margin: 0px;
+  font-family: sans-serif;
 }
 /* fin body */
 
 /***** CLASES *****/
 /* - content */
 .content {
-  flex: 14;
+
 }
 /* fin content */
 
@@ -40,7 +41,10 @@ body {
 /* - layout */
 .layout {
   display: flex;
+  flex-direction: column;
   background-color: lightgrey;
+  padding: 0px 20px;
+
 }
 
 
@@ -57,12 +61,34 @@ body {
   top: 0;
   display: flex;
   background-color: lightgreen;
+  padding: 10px;
 }
 /* fin navbar */
 
-/* - sidebar */
-.sidebar {
-  flex: 1;
-  background: lightpink;
+/* - projects */
+.projects-container {
 }
-/* fin sidebar */
+
+.project-topic {
+
+}
+
+.project-topic-header {
+  cursor: pointer;
+  background-color: purple;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.project-topic-header:hover {
+
+}
+
+.project-topic-content {
+  display: none;
+  /* display: flex; */
+  flex-direction: row;
+}
+/* fin projects */

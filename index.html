@@ -25,14 +25,50 @@
   </head>
   <body>
     <nav class="navbar">
-      <h1>Hola Mundo</h1>
+      <h3>Hola Mundo</h3>
     </nav>
     <div class="layout">
-      <section class="sidebar">
-        <h3>Side</h3>
-      </section>
       <section class="content">
         <h2>Content</h2>
+      </section>
+      <section class="projects-container">
+        <div class="header">
+          <h2>Proyectos</h2>
+        </div>
+        <div class="projects">
+          <div class="project-topic">
+            <div class="project-topic-header" onclick="toggleProjects('projectosMatematicas')">
+              <h3>Matemáticas</h3>
+            </div>
+            <div id="projectosMatematicas" class="project-topic-content">
+              <div class="project">
+                1
+              </div>
+              <div class="project">
+                2
+              </div>
+              <div class="project">
+                3
+              </div>
+            </div>
+          </div>
+          <div class="project-topic">
+            <div class="project-topic-header">
+              <h3>Videjuegos</h3>
+            </div>
+            <div class="project-topic-content">
+
+            </div>
+          </div>
+          <div class="project-topic">
+            <div class="project-topic-header">
+              <h3>Web</h3>
+            </div>
+            <div class="project-topic-content">
+
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <footer class="footer">
