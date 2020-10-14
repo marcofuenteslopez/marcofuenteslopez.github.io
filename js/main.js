@@ -5,5 +5,5 @@ document.addEventListener('DOMContentLoaded', function(){
 
 function toggleProjects(id){
   var projects = document.getElementById(id);
-  projects.style.display = projects.style.display == 'none' ? 'flex' : 'none';
+  projects.style.display = projects.style.display == 'flex' ? 'none' : 'flex';
 }

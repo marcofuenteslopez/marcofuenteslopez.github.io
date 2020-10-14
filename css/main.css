@@ -4,6 +4,7 @@
 
 /* ETIQUETAS */
 /*
+  . anchor
   - body
 **/
 
@@ -17,6 +18,14 @@
 **/
 
 /***** ETIQUETAS *****/
+
+/* - anchor */
+a, a:link, a:visited, a:hover, a:active {
+  color : black;
+  text-decoration: none;
+}
+/* fin anchor */
+
 /* - body */
 body {
   margin: 0px;
@@ -48,11 +57,11 @@ body {
 }
 
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .layout {
     flex-direction: column;
   }
-}
+} */
 /* fin container */
 
 /* - navbar */
@@ -70,11 +79,10 @@ body {
 }
 
 .project-topic {
-
+  user-select: none;
 }
 
 .project-topic-header {
-  cursor: pointer;
   background-color: purple;
   padding: 10px 20px;
   margin: 10px 0px;
@@ -88,7 +96,27 @@ body {
 
 .project-topic-content {
   display: none;
-  /* display: flex; */
+  /* display: felx; */
   flex-direction: row;
+  flex-wrap: wrap;
 }
+
+.project {
+  /* position: relative; */
+  text-align: center;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.project:hover {
+  transform: translate(10px,-10px);
+  transition-duration: 0.5s;
+}
+
 /* fin projects */
