@@ -82,6 +82,25 @@ body {
   user-select: none;
 }
 
+.project-topic:hover .project-topic-header {
+  background-color: orange;
+}
+
+.project-topic:hover .project-topic-content {
+  max-height: 600px;
+  animation-duration: 2s;
+  animation-name: dropDown;
+}
+
+@keyframes dropDown {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 600px;
+  }
+}
+
 .project-topic-header {
   background-color: purple;
   padding: 10px 20px;
@@ -90,15 +109,12 @@ body {
   transition: 1s;
 }
 
-.project-topic-header:hover {
-
-}
-
 .project-topic-content {
-  display: none;
-  /* display: felx; */
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow: hidden;
+  max-height: 0;
 }
 
 .project {
