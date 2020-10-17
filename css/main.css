@@ -130,6 +130,11 @@ body {
   transition-duration: 0.5s;
 }
 
+@media (max-width : 460px) {
+  .project {
+    margin : 10px auto;
+  }
+}
 .project:hover {
   transform: translate(10px,-10px);
   transition-duration: 0.5s;
